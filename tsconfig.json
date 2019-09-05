@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true, //严格null模式检查
+    "noImplicitAny": false,//在表达式和声明上有隐含的any类型，是否进行报错
+    "module": "ES6", //生成的模块系统代码
+    "target": "ES5", //置顶ECMScript版本
+    "allowJs": false, //是否允许编译js文件
+    "experimentalDecorators": true,//开启实验性的装饰器
+    "noImplicitThis": false,//不允许this表达式的值为any类型的时候
+    "noImplicitReturns": false,//不是函数的所有返回路径都有返回值时报错。
+    "alwaysStrict": true,//以严格模式解析并为每个源文件生成 "use strict"语句
+    "inlineSourceMap": true,//生成单个sourcemaps文件，而不是将每sourcemaps生成不同的文件。
+    "inlineSources": true,
+    "noFallthroughCasesInSwitch": true,//报告switch语句的fallthrough错误。（即，不允许switch的case语句贯穿）
+    "noUnusedLocals": false,//若有未使用的局部变量则抛错。
+    "noUnusedParameters": true,//若有未使用的参数则抛错。
+    "strict": true,//启用所有严格类型检查选项。 启用 --strict相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict， --strictNullChecks      --strictFunctionTypes和--strictPropertyInitialization。
+    "removeComments": true,//删除所有注释，除了以 /!*开头的版权信息。
+    "pretty": true,//给错误和消息设置样式，使用颜色和上下文。
+    "strictPropertyInitialization": true, //确保类的非undefined属性已经在构造函数里初始化。若要令此选项生效，需要同时启用--strictNullChecks。
+    "maxNodeModuleJsDepth":10,//node_modules最大搜索深度
+    "moduleResolution": "node", //查找模块的方式按node
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "lib":[
+      "es2015",
+      "dom"
+    ] //编译过程中需要引入的库文件的列表。
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
