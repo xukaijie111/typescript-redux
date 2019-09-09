@@ -61,7 +61,7 @@ export function combineReducers(reducers:IReducersMapObject):Reducer{
         let nextState = {};
         for (let _key of  finalReducerKeys) {
             const reducer = finalReducers[_key];
-            const previousStateForKey = state[_key];
+            const previousStateForKey:any = state[_key] ? state[_key] : undefined;
             const nextStateForKey = reducer(previousStateForKey, action);
             if (typeof nextStateForKey === 'undefined') {
                 const errorMessage = getUndefinedStateErrorMessage(_key, action);

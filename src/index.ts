@@ -10,7 +10,7 @@ function sum(a,b){
 
 console.log(createStore,combineReducers,bindActionCreators,sum)
 
-module.exports = {
+export {
     createStore,
     combineReducers,
     bindActionCreators,

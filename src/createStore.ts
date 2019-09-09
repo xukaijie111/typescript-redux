@@ -30,7 +30,7 @@ export  default function createStore(reducer:Reducer,preloadedState?:any, enhanc
         throw new Error('Expected the reducer to be a function.')
     }
     let currentReducer = reducer
-    let currentState:State;
+    let currentState:State = {};
     let listeners:IVoidfunc[] = [];
     let isDispatching:boolean = false;
 

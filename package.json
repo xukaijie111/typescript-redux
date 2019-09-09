@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "clean":"rm -rf ./src/**/*.js"
+    "clean": "rm -rf ./src/**/*.js"
   },
   "author": "xukaijie",
   "license": "ISC",
