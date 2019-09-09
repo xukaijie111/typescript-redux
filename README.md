@@ -3,8 +3,11 @@
 
 # 介绍项目里几个文件的内容：
 index.ts: 暴露了对外使用的几个接口
+
           createStore--该函数创建一个store，入参为reducer函数的对象,返回的store是唯一的,store的创建源码可以看createStore.ts文件
+          
           combineReducers--该函数创建一个reducer函数，供dispatch调用，实现的源码在combinereducers.ts文件
+          
           bindActionCreators--该函数会将你定义的action变成一个dipacth动作。
           
 createStore.ts:该文件内容包括store的创建，以及store里包含的几个函数
