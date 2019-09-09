@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest",
+    "clean":"rm -rf ./src/**/*.js"
   },
   "author": "xukaijie",
   "license": "ISC",

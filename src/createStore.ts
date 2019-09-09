@@ -15,7 +15,7 @@ export const actionTypes = exports.ActionTypes = {
     INIT: 'typescript-redux/INIT'
 }
 
-export  function createStore(reducer:Reducer,preloadedState?:any, enhancer?:any){
+export  default function createStore(reducer:Reducer,preloadedState?:any, enhancer?:any){
     if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
         enhancer = preloadedState
         preloadedState = undefined

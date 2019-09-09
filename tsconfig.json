@@ -2,7 +2,7 @@
   "compilerOptions": {
     "strictNullChecks": true, //严格null模式检查
     "noImplicitAny": false,//在表达式和声明上有隐含的any类型，是否进行报错
-    "module": "ES6", //生成的模块系统代码
+    "module": "CommonJS", //生成的模块系统代码
     "target": "ES5", //置顶ECMScript版本
     "allowJs": false, //是否允许编译js文件
     "experimentalDecorators": true,//开启实验性的装饰器
