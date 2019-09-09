@@ -11,9 +11,13 @@ index.ts: 暴露了对外使用的几个接口
           bindActionCreators--该函数会将你定义的action变成一个dipacth动作。
           
 createStore.ts:该文件内容包括store的创建，以及store里包含的几个函数
+
 combineReducers.ts：该文件为创建reducer
+
 bindActionCreators:该文件将你的action对象变成一个dispacth动作
+
 applyMiddleware.ts:该文件是提供中间件功能，里面利用了数组的reduce函数，制作高阶柯里化函数体，能看懂这部分的人，说明逻辑思维能力很好
+
 
 # 结束
 该源码也是一边参考redux，在已经理解的基础上，进行重写，也是想对typescript的一个熟悉和记忆。        
